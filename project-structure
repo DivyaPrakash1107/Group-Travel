@@ -1,0 +1,18 @@
+travel-platform/
+├── src/
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Button.jsx
+│   │   │   ├── SearchBar.jsx
+│   │   │   └── Navbar.jsx
+│   │   ├── home/
+│   │   │   ├── HeroSection.jsx
+│   │   │   ├── TrendingDestinations.jsx
+│   │   │   └── TestimonialsSection.jsx
+│   │   └── layout/
+│   │       └── MainLayout.jsx
+│   ├── styles/
+│   │   └── global.css
+│   ├── App.jsx
+│   └── main.jsx
+└── package.json 
