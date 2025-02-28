@@ -4,39 +4,39 @@ import { useNavigate } from 'react-router-dom';
 const destinations = [
   {
     id: 1,
-    slug: 'bali-indonesia',
-    name: 'Bali, Indonesia',
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4',
+    slug: 'rajasthan-india',
+    name: 'Rajasthan, India',
+    image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41',
     rating: 4.8,
-    price: 'From $899',
-    description: 'Experience paradise on Earth with pristine beaches and rich culture'
+    price: 'From ₹25,000',
+    description: 'Experience royal heritage, magnificent forts, and vibrant culture'
   },
   {
     id: 2,
-    slug: 'santorini-greece',
-    name: 'Santorini, Greece',
-    image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff',
+    slug: 'kerala-india',
+    name: 'Kerala, India',
+    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944',
     rating: 4.9,
-    price: 'From $1299',
-    description: 'Iconic white buildings and breathtaking Mediterranean sunsets'
+    price: 'From ₹20,000',
+    description: 'Discover backwaters, tea plantations, and pristine beaches'
   },
   {
     id: 3,
-    slug: 'swiss-alps',
-    name: 'Swiss Alps',
-    image: 'https://images.unsplash.com/photo-1531310197839-ccf54634509e',
+    slug: 'ladakh-india',
+    name: 'Ladakh, India',
+    image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23',
     rating: 4.7,
-    price: 'From $1499',
-    description: 'Majestic mountains and world-class skiing adventures'
+    price: 'From ₹30,000',
+    description: 'Explore high-altitude deserts, monasteries, and stunning landscapes'
   },
   {
     id: 4,
-    slug: 'machu-picchu-peru',
-    name: 'Machu Picchu, Peru',
-    image: 'https://images.unsplash.com/photo-1587595431973-160d0d94add1',
-    rating: 4.9,
-    price: 'From $1699',
-    description: 'Ancient Incan citadel set high in the Andes Mountains'
+    slug: 'goa-india',
+    name: 'Goa, India',
+    image: 'https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3',
+    rating: 4.6,
+    price: 'From ₹15,000',
+    description: 'Enjoy beaches, nightlife, and Portuguese heritage'
   }
 ];
 
@@ -55,7 +55,7 @@ const TrendingDestinations = () => {
             Trending Destinations
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover the most popular destinations loved by travelers worldwide
+            Discover India's most enchanting destinations loved by travelers
           </p>
         </div>
         

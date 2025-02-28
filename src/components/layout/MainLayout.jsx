@@ -1,14 +1,15 @@
 import React from 'react';
 import Navbar from '../common/Navbar';
+import Footer from '../common/Footer';
 
 const MainLayout = ({ children }) => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       <Navbar />
-      <main>
+      <main className="flex-grow">
         {children}
       </main>
-      {/* Footer will be added later */}
+      <Footer />
     </div>
   );
 };
