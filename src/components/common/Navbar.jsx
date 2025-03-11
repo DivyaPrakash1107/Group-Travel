@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import travelLogo from '../../assets/images/travel.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,22 +10,23 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <img className="h-8 w-auto" src="/logo.svg" alt="Travel Platform" />
+            <div className="flex-shrink-0 flex items-center">
+              <img className="h-8 w-auto" src={travelLogo} alt="Roamly" />
+              <span className="ml-2 text-xl font-bold text-gray-900">Roamly</span>
             </div>
             <div className="hidden md:ml-10 md:flex md:space-x-8">
-              <a href="/" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-semibold transition-colors">
+              <Link to="/" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-semibold transition-colors">
                 Home
-              </a>
-              <a href="/destinations" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-semibold transition-colors">
+              </Link>
+              <Link to="/destinations" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-semibold transition-colors">
                 Destinations
-              </a>
-              <a href="/packages" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-semibold transition-colors">
+              </Link>
+              <Link to="/packages" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-semibold transition-colors">
                 Packages
-              </a>
-              <a href="/community" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-semibold transition-colors">
+              </Link>
+              <Link to="/community" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-semibold transition-colors">
                 Community
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex items-center space-x-4">

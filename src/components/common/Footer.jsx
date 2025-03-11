@@ -1,18 +1,22 @@
 import React from 'react';
+import logo from '../../assets/images/travel.png'; // Adjust the path as necessary
 
 const Footer = () => {
   return (
     <footer className="bg-white border-t">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Logo and Copyright Section */}
-          <div className="col-span-1 md:col-span-1">
-            <img 
-              src="/logo.svg" 
-              alt="Travel Platform" 
-              className="h-8 w-auto mb-6"
-            />
-            <p className="text-sm text-gray-500">
+          {/* Logo and Company Name Section */}
+          <div className="col-span-1 md:col-span-1 flex items-center flex-col">
+            <div className="flex items-center">
+              <img 
+                src={logo} // Use the imported image
+                alt="Roamly" 
+                className="h-8 w-auto mb-2"
+              />
+              <span className="ml-2 text-xl font-bold text-gray-900">Roamly</span>
+            </div>
+            <p className="text-sm text-gray-500 text-center mt-2">
               Discover unique experiences curated by the world's most inspiring brands
             </p>
           </div>
